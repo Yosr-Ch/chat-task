@@ -57,7 +57,7 @@ A real-time chat application.
     git clone https://github.com/Yosr-Ch/chat-task
     ```
     ```
-    cd test_K.Lab/TestServer
+    cd TestServer
     ```
 
 - Install node libs

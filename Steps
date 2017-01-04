@@ -1,0 +1,28 @@
+#Steps
+
+- This task took me about three/four days and documenting the steps took me around two hours.
+
+- First thing I did I read about docker and tried to understand its usage. Than I left integrating it to the end.
+- I cloned the client and built the basic backend (at first I tried using express, than I found no need for that, no routes to manage so http is sufficient) 
+- I took time to resolve some errors about "failed: Connection closed before receiving a handshake response".
+and can't render the view.
+- After some reads I figured out that it's a client-server architecture, based on that I organized my files (which were drafts at that moment) into two folders TestClient (which contains the prjoect cloned) and the other folder TestServer (which the websocket server)
+I struggled half a day to run the client till I finally found that I need to install finalhandler and serve-static with npm
+
+A lot of hours : I can't remember how many iterations it took me, but of course I didn't make it work from the first time.
+- I stored the history of the 10 last msgs into an array.
+- Sending a msg to the persons on the same channel: to achieve that I stored the channels joined into an array first thing that came to my mind that I had to store channels then  check which channel is the client subscribed to by its index in the array, 
+yeah it's complicated and I waste a bunch of time coding it, then I figured out I already have the current channel, why look for it in the array
+
+- Among the problems I faced the messages are displayed twice: spent a lot of time on it
+- Managing events like on join, worked on it on many iterations
+
+##redis  
+- First I tried redis pub/sub found a lot on documentation on using in chat apps but with socket.io but I didn't manage to make it work 
+- I was going to use  RedisObjectStore = require ('redis-list-objects') thinking that data is easier to manipulate
+Then I thought of hashes (history:timestamp author "" channel "" text ""), timestamp as an id and I can store fields and their values. But finally I chose sorted set, where memebers are the messages which are stored as string object, fetching values is easier and I can use zrange to get the messages sorted by scores (the timestamp of the messgae) 
+
+##Docker 
+Installed the environment, docker engine, docker daemon,  docker compose.
+I tried to follow the tuto but I didn't manage to make it work. However, I included the files I created for making it run on docker.
+

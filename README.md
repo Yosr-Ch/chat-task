@@ -54,7 +54,7 @@ A real-time chat application.
 - Clone the repository
 
     ```
-    git clone 
+    git clone https://github.com/Yosr-Ch/chat-task
     ```
     ```
     cd test_K.Lab/TestServer

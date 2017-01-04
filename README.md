@@ -48,9 +48,9 @@ A real-time chat application.
 - For server -> client I distinguished between 2 different types of message:
  server sends messages history
  server sends messages to users in the same channel
-- Therefore every message is a simple JavaScript object (JSON).
+ Therefore every message is a simple JavaScript object (JSON).
 
-- I included a file [Steps](steps) which details my choices and which difficulties I faced. 
+- I included a file [Steps](chat-task/steps) which details my choices and which difficulties I faced. 
 
 ### Setup 
 - Clone the repository

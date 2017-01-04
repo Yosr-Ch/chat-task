@@ -50,6 +50,8 @@ A real-time chat application.
  server sends messages to users in the same channel
 - Therefore every message is a simple JavaScript object (JSON).
 
+- I included a file [Steps](steps) which details my choices and which difficulties I faced. 
+
 ### Setup 
 - Clone the repository
 

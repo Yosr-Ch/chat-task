@@ -55,12 +55,14 @@ A real-time chat application.
 
     ```
     git clone 
-
+    ```
+    ```
     cd test_K.Lab/TestServer
+    ```
 
 - Install node libs
     ```
-	npm install
+    npm install
     ```
 - Run the script
 
@@ -70,4 +72,4 @@ A real-time chat application.
 
 ### Submitting
 
-The basic function that is working is opening 2 browser windows (chromium Version 53.0.2785.143, firefox version 50.0) and chat.
+- The basic function that is working is opening 2 browser windows (chromium Version 53.0.2785.143, firefox version 50.0) and chat.
